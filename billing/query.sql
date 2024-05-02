@@ -368,10 +368,9 @@ where
                     1
             ) as tmp000
     )
-    and tmp.orden_compra = 'v121932843jmch-01'
     and tmp.negocio = '{negocio}'
-    and tmp.proveedor <> 'None'
-    and tmp.nombre_driver <> 'None'
+    --and tmp.proveedor <> 'None'
+    --and tmp.nombre_driver <> 'None'
     and tmp.fecha_compromiso >= '{fecha_compromiso_inicial}'
     and tmp.fecha_compromiso <= '{fecha_compromiso_final}' --[[and  tmp.fecha_evento>= ({{updated_at1}}::date || ' 0:00:00')::timestamp]]
     --[[and  tmp.fecha_evento<= ({{updated_at2}}::date || ' 23:59:59')::timestamp]]
